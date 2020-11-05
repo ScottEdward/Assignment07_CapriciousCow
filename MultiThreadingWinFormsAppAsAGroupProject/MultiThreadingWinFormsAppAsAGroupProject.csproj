@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBC7F706-3C3E-4ED5-9737-3BD21F372231}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MultiThreadingWinFormsAppAsAGroupProject</RootNamespace>
+    <AssemblyName>MultiThreadingWinFormsAppAsAGroupProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassProcessing.cs" />
+    <Compile Include="FantasticBeastsNotUsed\AthleticAardvark.cs" />
+    <Compile Include="FantasticBeastsNotUsed\ConspicuousCrow.cs" />
+    <Compile Include="FantasticBeastsNotUsed\ObedientOwl.cs" />
+    <Compile Include="FantasticBeastsNotUsed\PerspicaciousPorcupine.cs" />
+    <Compile Include="FantasticBeasts\AbiogeneticTestCase.cs" />
+    <Compile Include="FantasticBeastsNotUsed\AdorableAnt.cs" />
+    <Compile Include="FantasticBeastsNotUsed\BenevolentBaboon.cs" />
+    <Compile Include="FantasticBeasts\CapriciousCow.cs" />
+    <Compile Include="FantasticBeastsNotUsed\CaptivatingCamel.cs" />
+    <Compile Include="FantasticBeastsNotUsed\CasualCheetah.cs" />
+    <Compile Include="FantasticBeastsNotUsed\ClimbingCat.cs" />
+    <Compile Include="FantasticBeastsNotUsed\DoggedDog.cs" />
+    <Compile Include="FantasticBeast.cs" />
+    <Compile Include="FantasticBeastsNotUsed\FranticFox.cs" />
+    <Compile Include="FantasticBeastsNotUsed\FeloniousFeline.cs" />
+    <Compile Include="FantasticBeastsNotUsed\LoquaciousLemur.cs" />
+    <Compile Include="FantasticBeastsNotUsed\MuscularMoose.cs" />
+    <Compile Include="FantasticBeastsNotUsed\PassionatePanda.cs" />
+    <Compile Include="FantasticBeastsNotUsed\PeacefulPenguin.cs" />
+    <Compile Include="FantasticBeastsNotUsed\PropitiousParakeet.cs" />
+    <Compile Include="FantasticBeastsNotUsed\RapaciousRobin.cs" />
+    <Compile Include="FantasticBeastsNotUsed\ReasonableRaccoon.cs" />
+    <Compile Include="FantasticBeastsNotUsed\SpuriousSwallow.cs" />
+    <Compile Include="FantasticBeastsNotUsed\SuperSheep.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FantasticBeastsNotUsed\GallopingGoat.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
